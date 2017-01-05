@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<iframe id="myIframe" src="" style="height:700px;width:100%;"></iframe>
+
+<script type="text/javascript">
+
+function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+var targetURL = decodeURI(getParameterByName('targetURL'));
+
+document.getElementById('myIframe').src = targetURL ;
+
+</script>
+
+
+</body>
+</html>

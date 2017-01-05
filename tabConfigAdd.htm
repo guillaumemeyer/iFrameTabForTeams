@@ -1,0 +1,54 @@
+<html>
+  <head>
+  </head>
+<body>
+
+<form>
+  How do you want to display tour page ? <br>
+  <input type="radio" name="feedtype" value="iFrame" onclick="onClick()"> iFrame<br>
+  <input type="radio" name="feedtype" value="Redirect" onclick="onClick()"> Redirect<br><br>
+  Target URL : <br>
+  <input type="text" name="targetURL" ><br>
+</form> 
+
+<script src="https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js"></script>
+
+<script type="text/javascript">  
+
+microsoftTeams.initialize();
+microsoftTeams.settings.registerOnSaveHandler(function(saveEvent){
+
+    var radios = document.getElementsByName("feedtype");
+    var targetURL = document.getElementsByName("targetURL")[0].value;
+
+    if (radios[0].checked) {
+       microsoftTeams.settings.setSettings({
+         contentUrl: "https://www.eryem.com/wp-content/uploads/iFrameTabForTeams/tabContentIframe.htm?" + 
+         "targetURL=" + encodeURI(targetURL) ,
+         suggestedTabName: "iFrame",
+         websiteUrl: "https://www.eryem.com/",
+         removeUrl: "https://www.eryem.com/wp-content/uploads/iFrameTabForTeams/tabremove.html",
+         customSettings: ''
+      });
+    } else {
+       microsoftTeams.settings.setSettings({
+         contentUrl: "https://www.eryem.com/wp-content/uploads/iFrameTabForTeams/tabContentRedirect.htm?" + 
+         "targetURL=" + encodeURI(targetURL) ,
+         suggestedTabName: "Redirect",
+         websiteUrl: "https://www.eryem.com/",
+         removeUrl: "https://www.eryem.com/wp-content/uploads/iFrameTabForTeams/tabremove.html",
+         customSettings: ''
+      });
+    }
+
+    saveEvent.notifySuccess();
+});
+
+function onClick() {
+    microsoftTeams.settings.setValidityState(true);
+}
+
+</script>
+
+</body>
+</html>

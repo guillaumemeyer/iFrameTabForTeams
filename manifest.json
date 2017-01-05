@@ -1,0 +1,28 @@
+{
+    "$schema": "https://statics.teams.microsoft.com/sdk/v0.2/manifest/MicrosoftTeams.schema.json",
+    "manifestVersion": "0.2",
+    "id": "com.eryem.microsoftteamstabs.iframe",
+    "version": "0.2",
+    "name": "iFrame",
+    "developer": {
+        "name": "Guillaume Meyer",   
+        "websiteUrl": "https://www.linkedin.com/in/guillaumemeyer",
+        "privacyUrl": "https://www.linkedin.com/in/guillaumemeyer",
+        "termsOfUseUrl": "https://www.linkedin.com/in/guillaumemeyer"
+    },
+    "description" : {
+            "short": "Display an iFrame as a tab.",
+            "full": "iFrame Tab for Microsoft Teams displays an iFrame as a Microsoft Teams tab."
+    },
+    "icons": {
+            "44": "yam44.png",
+            "88": "yam88.png"
+    },
+    "accentColor" : "#ffffff",
+    "configUrl": "https://www.eryem.com/wp-content/uploads/iFrameTabForTeams/tabConfigAdd.htm",
+    "canUpdateConfig": true,
+    "needsIdentity": false,
+    "validDomains": [
+        "*.eryem.com"
+    ]
+}
