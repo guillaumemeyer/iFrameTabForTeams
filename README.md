@@ -2,6 +2,8 @@
 
 iFrame Tab for Microsoft Teams displays an iFrame as a Microsoft Teams tab.
 
+![Image of iFrameTabForTeams](https://www.eryem.com/wp-content/uploads/iFrameTabForTeams/screenshots/iFrameTabForTeams.jpg)
+
 ## Setup
 
 1. Download "iFrameTabForTeams.zip" from the "Package" folder
