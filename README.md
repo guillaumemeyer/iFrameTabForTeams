@@ -14,7 +14,7 @@ iFrame Tab for Microsoft Teams displays an iFrame as a Microsoft Teams tab.
 2. Click the "+" sign
 3. Select the iFrame icon
 4. Agree to the developer’s License terms ;-)
-5. Type your target page URL
+5. Type your target page URL aud select loading mode, iFrame or Redirect
 6. Hit "Save" and Voila !
 
 Keep in mind that you can always configure an existing tab by using the tab contextual menu and clicking on "Configure".

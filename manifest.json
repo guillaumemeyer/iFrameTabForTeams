@@ -2,7 +2,7 @@
     "$schema": "https://statics.teams.microsoft.com/sdk/v0.2/manifest/MicrosoftTeams.schema.json",
     "manifestVersion": "0.2",
     "id": "com.eryem.microsoftteamstabs.iframe",
-    "version": "0.2",
+    "version": "0.3",
     "name": "iFrame",
     "developer": {
         "name": "Guillaume Meyer",   
@@ -15,8 +15,8 @@
             "full": "iFrame Tab for Microsoft Teams displays an iFrame as a Microsoft Teams tab."
     },
     "icons": {
-            "44": "yam44.png",
-            "88": "yam88.png"
+            "44": "iFrame44.png",
+            "88": "iFrame88.png"
     },
     "accentColor" : "#ffffff",
     "configUrl": "https://www.eryem.com/wp-content/uploads/iFrameTabForTeams/tabConfigAdd.htm",
